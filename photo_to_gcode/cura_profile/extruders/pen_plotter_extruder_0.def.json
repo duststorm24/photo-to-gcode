@@ -1,0 +1,15 @@
+{
+  "version": 2,
+  "name": "Pen Plotter Extruder 0",
+  "inherits": "fdmextruder",
+  "metadata": {
+    "machine": "pen_plotter",
+    "position": "0"
+  },
+  "overrides": {
+    "extruder_nr": {
+      "default_value": 0,
+      "maximum_value": "0"
+    }
+  }
+}

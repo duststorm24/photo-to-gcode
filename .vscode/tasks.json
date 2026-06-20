@@ -1,0 +1,78 @@
+{
+  "version": "2.0.0",
+  "tasks": [
+    {
+      "label": "ESP32 OTA Build",
+      "type": "shell",
+      "command": "${workspaceFolder}/.venv/bin/platformio",
+      "args": [
+        "run",
+        "-d",
+        "${workspaceFolder}/firmware/esp32_grbl_bridge_plotter_hardened",
+        "-e",
+        "esp32_bridge_ota"
+      ],
+      "problemMatcher": []
+    },
+    {
+      "label": "ESP32 OTA Upload (.local)",
+      "type": "shell",
+      "command": "${workspaceFolder}/.venv/bin/platformio",
+      "args": [
+        "run",
+        "-d",
+        "${workspaceFolder}/firmware/esp32_grbl_bridge_plotter_hardened",
+        "-e",
+        "esp32_bridge_ota",
+        "-t",
+        "upload"
+      ],
+      "problemMatcher": []
+    },
+    {
+      "label": "ESP32 OTA Upload (10.0.0.89)",
+      "type": "shell",
+      "command": "${workspaceFolder}/.venv/bin/platformio",
+      "args": [
+        "run",
+        "-d",
+        "${workspaceFolder}/firmware/esp32_grbl_bridge_plotter_hardened",
+        "-e",
+        "esp32_bridge_ota_ip",
+        "-t",
+        "upload"
+      ],
+      "problemMatcher": []
+    },
+    {
+      "label": "ESP32 OTA Upload (10.0.0.90)",
+      "type": "shell",
+      "command": "${workspaceFolder}/.venv/bin/platformio",
+      "args": [
+        "run",
+        "-d",
+        "${workspaceFolder}/firmware/esp32_grbl_bridge_plotter_hardened",
+        "-e",
+        "esp32_bridge_ota_ip_90",
+        "-t",
+        "upload"
+      ],
+      "problemMatcher": []
+    },
+    {
+      "label": "ESP32 USB Upload",
+      "type": "shell",
+      "command": "${workspaceFolder}/.venv/bin/platformio",
+      "args": [
+        "run",
+        "-d",
+        "${workspaceFolder}/firmware/esp32_grbl_bridge_plotter_hardened",
+        "-e",
+        "esp32_bridge_usb",
+        "-t",
+        "upload"
+      ],
+      "problemMatcher": []
+    }
+  ]
+}

@@ -1,0 +1,47 @@
+{
+  "version": 2,
+  "name": "Pen Plotter",
+  "inherits": "fdmprinter",
+  "metadata": {
+    "author": "OpenAI",
+    "manufacturer": "Custom",
+    "visible": true,
+    "file_formats": "text/x-gcode",
+    "has_materials": false,
+    "machine_extruder_trains": {
+      "0": "pen_plotter_extruder_0"
+    }
+  },
+  "overrides": {
+    "machine_extruder_count": {
+      "default_value": 1
+    },
+    "machine_heated_bed": {
+      "default_value": false
+    },
+    "machine_heated_build_volume": {
+      "default_value": false
+    },
+    "machine_center_is_zero": {
+      "default_value": false
+    },
+    "machine_width": {
+      "default_value": 220
+    },
+    "machine_depth": {
+      "default_value": 220
+    },
+    "machine_height": {
+      "default_value": 5
+    },
+    "machine_gcode_flavor": {
+      "default_value": "RepRap (Marlin/Sprinter)"
+    },
+    "material_diameter": {
+      "default_value": 1.75
+    },
+    "machine_nozzle_size": {
+      "default_value": 0.5
+    }
+  }
+}

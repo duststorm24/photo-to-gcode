@@ -1,0 +1,12 @@
+streamlit
+streamlit-autorefresh
+streamlit-drawable-canvas
+fastapi
+uvicorn
+python-multipart
+opencv-python-headless
+numpy
+pillow
+scikit-image
+potracer
+requests
